@@ -21,7 +21,12 @@ const ProjectCard: React.FC<{
   fadeDirection = 'left',
 }) => {
   return (
-    <Fade direction={fadeDirection} className="p-4 lg:w-1/3" duration={1000}>
+    <Fade
+      triggerOnce={true}
+      direction={fadeDirection}
+      className="p-4 lg:w-1/3"
+      duration={1000}
+    >
       <div
         role="button"
         tabIndex={index}
@@ -43,11 +48,11 @@ const ProjectCard: React.FC<{
 
         <div className="p-4 h-auto flex-grow flex flex-col justify-between">
           <div>
-            <h1 className="block transition-all duration-500 ease-in-out text-blue-400 group-hover:text-blue-600 font-semibold mb-2 text-lg md:text-base lg:text-lg">
+            <h1 className="block transition-all duration-500 ease-in-out text-blue-400 group-hover:text-blue-600 font-semibold mb-2 text-base md:text-base lg:text-lg">
               {title}
             </h1>
 
-            <div className="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm">
+            <div className="text-gray-600 leading-relaxed block text-sm md:text-xs lg:text-sm">
               {description}
             </div>
           </div>

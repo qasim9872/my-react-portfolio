@@ -39,11 +39,11 @@ const TimelineElementWrapper: React.FC<TimelineElement> = ({
       date={formatDate(start, end)}
       iconStyle={{ background: iconColor, color: '#fff' }}
     >
-      <h3 className="vertical-timeline-element-title font-bold text-lg text-black">
+      <h3 className="vertical-timeline-element-title font-bold text-black text-lg md:text-base lg:text-lg">
         {title}
       </h3>
       <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
-      <div className="py-2">
+      <div className="py-2 text-sm md:text-sm lg:text-base">
         {description && <p>{description}</p>}
         {points && points.length > 0 && (
           <ul className="list-disc list-inside">

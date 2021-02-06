@@ -10,6 +10,7 @@ const Basic: React.FC<{
     <div className="px-2 lg:px-10 py-28 flex flex-col">
       <div className="flex flex-col justify-around uppercase max-w-3/5">
         <Fade
+          triggerOnce={true}
           direction="left"
           className="text-xs pb-4 text-gray-400 tracking-5px"
         >
@@ -20,6 +21,7 @@ const Basic: React.FC<{
           </div>
         </Fade>
         <Fade
+          triggerOnce={true}
           direction="up"
           duration={1500}
           className="text-xl font-bold tracking-5px"

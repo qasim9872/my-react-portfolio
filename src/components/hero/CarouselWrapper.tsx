@@ -23,6 +23,7 @@ const CarouselWrapper: React.FC<{
       showStatus={false}
       showThumbs={false}
       stopOnHover={false}
+      swipeable={false}
     >
       {slides.map((slideData) => (
         <HeroSlide

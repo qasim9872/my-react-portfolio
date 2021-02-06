@@ -15,14 +15,16 @@ const ItemHeader: React.FC<{
     <div className="flex flex-grow items-center">
       <a
         href={props.link}
-        className="w-auto h-20 mr-4 transition-all ease-in-out duration-500 transform hover:-rotate-45 hover:scale-110"
+        className="hidden md:block w-auto h-20 mr-4 transition-all ease-in-out duration-500 transform hover:-rotate-45 hover:scale-110"
       >
         <img alt={props.title} className="w-auto h-20 mr-4" src={props.logo} />
       </a>
 
       <div className="flex flex-grow flex-col description">
         <div className="flex flex-grow flex-row items-center justify-between">
-          <h1 className="text-2xl font-semibold mr-4">{props.title}</h1>
+          <h1 className="text-lg md:text-1xl lg:text-2xl font-semibold md:mr-4">
+            {props.title}
+          </h1>
           {props.badgeText && (
             <div className="rounded-full bg-purple-600 text-gray-100 mr-3">
               <span className="font-semibold p-3">{props.badgeText}</span>
@@ -56,7 +58,7 @@ const ItemDescription: React.FC<{
           </h2>
         )}
 
-        <div className="px-4">
+        <div className="px-4 text-sm md:text-sm lg:text-base">
           {description && <p>{description}</p>}
           {points && points.length > 0 && (
             <ul className="list-disc list-inside">
@@ -88,7 +90,7 @@ const ListItem: React.FC<{
   const [open, setOpen] = useState(false);
 
   return (
-    <Fade direction={props.fadeDirection}>
+    <Fade triggerOnce={true} direction={props.fadeDirection}>
       <div
         className={`transition-all ease-in-out duration-500 shadow-md my-8 rounded ${
           open

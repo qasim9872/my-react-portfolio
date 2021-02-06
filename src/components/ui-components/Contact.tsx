@@ -23,7 +23,11 @@ export const Info: React.FC<{
   fadeDirection: ComponentProps<typeof Fade>['direction'];
 }> = ({ socials, fadeDirection }) => {
   return (
-    <Fade direction={fadeDirection} className="flex-grow flex max-w-1/2">
+    <Fade
+      triggerOnce={true}
+      direction={fadeDirection}
+      className="flex-grow flex max-w-1/2"
+    >
       <div className="flex-grow flex flex-col bg-gray-300">
         {Object.entries(socials).map(([name, value]) => (
           <InfoEntry key={name} name={name} value={value} />
