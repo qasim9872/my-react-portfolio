@@ -20,7 +20,7 @@ function App() {
         <Router>
           <div className="flex">
             <SideNav />
-            <div className="lg:ml-72">
+            <div className="md:ml-72">
               <Switch>
                 <Route path="/">
                   <Main />
