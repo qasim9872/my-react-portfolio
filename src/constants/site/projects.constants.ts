@@ -34,7 +34,7 @@ const projects: DynamicLayoutWithBasicWrapper = {
           image: MyReactPortfolio,
           link: 'tbc',
           fadeDirection: 'bottom-left',
-          tags: ['react'],
+          tags: ['react', 'tailwind css'],
         },
         {
           componentName: 'ProjectCard',
@@ -45,7 +45,7 @@ const projects: DynamicLayoutWithBasicWrapper = {
             'A work in progress - proof of concept for building FAQ voicebots for online sellers',
           image: MyVoiceBot,
           fadeDirection: 'bottom-right',
-          tags: ['twilio', 'TypeScript'],
+          tags: ['Twilio', 'Fastify'],
         },
         {
           componentName: 'ProjectCard',
