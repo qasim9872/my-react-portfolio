@@ -29,7 +29,7 @@ const experience: DynamicLayoutWithBasicWrapper = {
             'Took the initiative to develop a VSCode Extension that enhanced the development experience by providing project specific code completion, code definitions and linting.',
             'Took the initiative to develop a code generation script for building FAQs directly from a spreadsheet. Reducing the initial build time of a project by over 90% (2 weeks to around 1 day).',
           ],
-          start: new Date('2022-08-01'),
+          start: new Date('2021-08-01'),
           iconColor: 'rgb(175, 225, 175)',
         },
         {
@@ -44,7 +44,7 @@ const experience: DynamicLayoutWithBasicWrapper = {
             'Worked with Kubernetes and CI/CD pipelines for end to end deployments',
           ],
           start: new Date('2019-07-01'),
-          end: new Date('2022-08-01'),
+          end: new Date('2021-08-01'),
           iconColor: 'rgb(236,84,83)',
         },
         {
