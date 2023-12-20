@@ -14,14 +14,13 @@ type HeroLayoutWithNoneWrapper = HeroLayout & NoneWrapper;
 export const CallToAction = {
   text: 'View CV',
   link:
-    'https://drive.google.com/file/d/15D4j9e34zYCzpslnX_5zqAKgX2jxuG5x/view?usp=sharing',
+        'https://drive.google.com/file/d/15D4j9e34zYCzpslnX_5zqAKgX2jxuG5x/view?usp=sharing',
   icon: download,
 };
 
 const heroConfig: HeroLayoutWithNoneWrapper = {
   id: 'home',
   layoutName: 'Hero',
-
   wrap: 'None',
 
   cta: CallToAction,
@@ -33,7 +32,7 @@ const heroConfig: HeroLayoutWithNoneWrapper = {
     },
     {
       image: heroImage2,
-      title: ['I am a', 'Software Engineer'],
+      title: ['I am a', 'Senior Software Engineer'],
       subtitle: '',
     },
   ],

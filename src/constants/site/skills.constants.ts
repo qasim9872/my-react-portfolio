@@ -87,7 +87,7 @@ const skills: DynamicLayoutWithBasicWrapper = {
           componentName: 'SkillBar',
           name: 'Python',
           color: 'yellow',
-          percentage: 75,
+          percentage: 90,
           fadeDirection: 'bottom-right',
         },
         {

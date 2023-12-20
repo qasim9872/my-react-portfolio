@@ -22,12 +22,14 @@ const experience: DynamicLayoutWithBasicWrapper = {
       elements: [
         {
           componentName: 'TimelineElement',
-          title: 'Full Stack Software Engineer',
+          title: 'Senior Full Stack Software Engineer',
           subtitle: 'PolyAI',
           points: [
-            'Senior Full Stack Software Engineer working across the stack to develop voice agents for 5+ clients.',
-            'Took the initiative to develop a VSCode Extension that enhanced the development experience by providing project specific code completion, code definitions and linting.',
-            'Took the initiative to develop a code generation script for building FAQs directly from a spreadsheet. Reducing the initial build time of a project by over 90% (2 weeks to around 1 day).',
+            'Researched and deployed a Flan-T5 model using Triton Inference Server (using FasterTransformers) with Docker. Improved the inference speed by 90% (Down to 200ms from 2s).',
+            'Took the initiative to develop a VSCode extension for enhancing the development experience by providing project specific code completion, code definitions and linting. This reduced the cognitive overload by 66% (editing a project requires a minimum of 3 files, where 2 files are config heavy).',
+            'Proactively developed a script for bootstrapping a project from project specs (in csv format). This led to approx 90% reduction in initial build time (2 weeks to 1 day). This has since evolved into a product feature.',
+            'Designed and deployed API servers (+ endpoints) using open api schema and Flask/Fast APIs.',
+            'Developed features on a React based frontend following agile best practices.',
           ],
           start: new Date('2021-08-01'),
           iconColor: 'rgb(175, 225, 175)',
